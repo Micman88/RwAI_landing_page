@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Responsible AI Readiness Test | Responsible with AI</title>
+<link rel="icon" href="https://www.responsiblewithai.com/logoo.webp">
 <meta name="description" content="How ready are you to use AI responsibly at work? Take the free 5 minute Responsible AI Readiness Test and get your score and the three things to fix first.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,7 +160,7 @@
         <h1>How ready are you to use AI <span class="g">responsibly</span> at work?</h1>
         <p class="sub">Get your score and the three things to fix first.</p>
         <p class="lead">A short test for professionals who already use AI in real work. Answer honestly and see where your judgement is strong, and where it's exposed.</p>
-        <a class="btn btn-primary js-cta" href="readiness-test.html">Take the Readiness Test <span class="arr">→</span></a>
+        <a class="btn btn-primary js-cta" href="test/">Take the Readiness Test <span class="arr">→</span></a>
         <div class="meta"><span>Free</span><span>5 minutes</span><span>Instant score</span></div>
       </div>
 
@@ -257,7 +258,7 @@
       <div class="kicker">Free · 5 minutes · Instant score</div>
       <h2>Don't just learn AI. Become the best professional you can be <span class="g">using AI.</span></h2>
       <p>Start with an honest picture of where you are today.</p>
-      <a class="btn btn-primary js-cta" href="readiness-test.html">Take the Readiness Test <span class="arr">→</span></a>
+      <a class="btn btn-primary js-cta" href="test/">Take the Readiness Test <span class="arr">→</span></a>
     </div>
   </section>
 </main>
@@ -265,7 +266,7 @@
 <footer>
   <div class="wrap foot">
     <span>© 2026 Responsible with AI</span>
-    <span><a href="privacy.html">Privacy notice</a></span>
+    <span><a href="privacy/">Privacy notice</a></span>
   </div>
 </footer>
 
@@ -279,7 +280,7 @@
       document.querySelectorAll('.js-cta').forEach(function(a){
         var u=new URL(a.getAttribute('href'),window.location.href);
         u.searchParams.set('src',src);
-        a.setAttribute('href',u.pathname.split('/').pop()+u.search);
+        a.setAttribute('href','test/'+u.search);
       });
     }catch(e){}
   })();
